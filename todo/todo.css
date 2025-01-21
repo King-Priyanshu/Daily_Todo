@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+
+    
+}
+
+.main_div{   
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+    height: 100px;
+    background-color: #333;
+    color: #f4f4f4;
+}
+.aside{
+    position: absolute;
+    width: 200px;
+    top: 100px;
+    left: 0;
+    width: 200px;
+    color: #f4f4f4;
+    background-color: #333;
+    bottom: 60px; 
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.side{
+    font-size: xx-large;
+    margin-top: 60px;
+    margin: 30px;
+}
+.footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    background-color: #333;
+    color: #f4f4f4;
+    text-align: center;
+}
+.content{
+    position: absolute;
+    /* position: relative; */
+    top: 100px;
+    left: 200px;
+    right: 0;
+    bottom: 60px;
+    background-color: #f4f4f4;
+    overflow: auto;
+}
+
+.form{
+    display: none;
+}
+
+.todo-table {
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.todo-table, .todo-table th, .todo-table td {
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+.todo-table th, .todo-table td {
+    padding: 8px;
+    text-align: center; /* Center-align text */
+    margin: 5px;
+}
+
+
+input {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+}
+
+button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.Modal{
+    border:2px solid;
+    box-shadow: #ccc;
+    position:absolute;
+    left:35%;
+    width: 350px;
+    height: 200px;
+    top:30%;
+    display: none;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    font-style:normal;
+    background-color: #514e4e;
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .aside {
+        display: none;
+        
+        
+    }
+    .content {
+        left: 0;
+    }
+    
+    .Modal{
+        left: 20px;
+    }
+
+}
+
